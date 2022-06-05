@@ -1,4 +1,4 @@
-
+//https://www.geeksforgeeks.org/find-first-and-last-positions-of-an-element-in-a-sorted-array/ custom occurene sorts
 public class BinarySearch {
 
 	public static void main(String[] args) {

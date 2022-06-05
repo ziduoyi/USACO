@@ -27,7 +27,6 @@ public class fcolor {
 			if(edges[i].size()>1)
 				list.add(i);
 		}
-		System.out.println(System.currentTimeMillis()-t1);
 		while(!list.isEmpty()) {
 			int node = list.removeFirst();
 			if(edges[node].size()<=1)
@@ -61,7 +60,6 @@ public class fcolor {
 			if(edges[r1].size()>1)
 				list.add(r1);
 		}
-		System.out.println(System.currentTimeMillis()-t1);
 		Map<Integer, Integer> map = new HashMap<>();
 		int a = 1;
 		for(int i=0; i<N; i++) {
@@ -70,7 +68,6 @@ public class fcolor {
 				map.put(curr, a++);
 			out.println(map.get(curr));
 		}
-		System.out.println(System.currentTimeMillis()-t1);
 		out.close();
 	}
 	static int getRoot(int pos) {

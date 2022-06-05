@@ -1,55 +1,105 @@
-/*
- * Given positive integers a, b, and n, find the sum of all integers in the pyramid.
- * For example, if a = 21, b = 2, n = 5, the pyramid is like this:
- *             21   2
- *           21  11   2
- *         21  32  13  2
- *       21  53  22  15  2
- *     21  74  75   37  17  2
- *
- * The output is 464.
- * 
- * Add the ideas here!
- */
 import java.util.*;
 import java.io.*;
 public class class5 {
 	public static void main(String[] args) throws IOException {
-		Scanner in = new Scanner(new File("pyramid.in"));
-		PrintWriter out = new PrintWriter(new File("pyramid.out"));
-		
-		int a = in.nextInt();
-		int b = in.nextInt();
-		int n = in.nextInt();
-		in.close();
-		
-		// find the rows of the pyramid and get the sum
-		int sum = a+b;
-
-		int[] A = new int[2];
-		A[0] = a;
-		A[1] = b;
-
-		for (int k = 1; k < n; k++) {
-			int[] B = new int[A.length + 1];
-
-			B[0] = A[0]+1;
-			for (int j = 1; j < A.length; j++)
-				B[j] = A[j - 1] + A[j];
-			
-			B[A.length] = A[A.length-1]+1;
-
-			if (A.length % 2 == 0) {
-				B[A.length / 2] /= 2;
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+		int t= Integer.parseInt(br.readLine());
+		for(int i=0; i<t; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			int n = Integer.parseInt(st.nextToken());
+			int l = Integer.parseInt(st.nextToken());
+			int r = Integer.parseInt(st.nextToken());
+			Set<Integer> left = new HashSet<>();
+			Map<Integer, Integer> countl = new HashMap<>();
+			Set<Integer> right = new HashSet<>();
+			Map<Integer, Integer> countr = new HashMap<>();
+			st = new StringTokenizer(br.readLine());
+			for(int j=0; j<l; j++) {
+				int num = Integer.parseInt(st.nextToken());
+				if(left.contains(num))
+					countl.put(num, countl.get(num)+1);
+				else {
+					left.add(num);
+					countl.put(num, 1);
+				}
 			}
-			A = B;
-
-			for (int j = 0; j < B.length; j++)
-				sum += B[j];
+			for(int j=0; j<r; j++) {
+				int num = Integer.parseInt(st.nextToken());
+				if(right.contains(num))
+					countr.put(num, countr.get(num)+1);
+				else {
+					right.add(num);
+					countr.put(num, 1);
+				}
+			}
+			int ans = 0;
+			LinkedList<Integer> rev = new LinkedList<>();
+			for(int num: left) {
+				if(right.contains(num)) {
+					int min = Math.min(countl.get(num), countr.get(num));
+					if(min==countl.get(num)) {
+						countl.remove(num);
+						rev.add(num);
+						countr.put(num, countr.get(num)-min);
+					}else {
+						countr.remove(num);
+						right.remove(num);
+						countl.put(num, countl.get(num)-min);
+					}
+				}
+			}
+			for(int num: rev)left.remove(num);
+			int size1 = 0;
+			int size2 = 0;
+			for(int num: left)
+				size1+=countl.get(num);
+			for(int num: right)
+				size2+=countr.get(num);
+			if(size1==size2) {
+				ans += size1;
+				out.write(ans+"\n");
+				continue;
+			}
+			if(size1>size2) {
+				int sub = size1-size2;
+				for(int num: left) {
+					int val = countl.get(num);
+					if(val>1) {
+						if(sub>=((val))) {
+							sub-=(val/2)*2;
+							ans+=(val/2);
+						}
+						else {
+							ans+= (sub/2);
+							sub = 0;
+						}
+					}
+					if(sub==0)break;
+				}
+				ans+= size2+(sub);
+			}
+			else {
+				int sub = size2-size1;
+				for(int num: right) {
+					int val = countr.get(num);
+					if(val>1) {
+						if(sub>=(val)) {
+							sub-=(val/2)*2;
+							ans+=(val/2);
+						}
+						else {
+							ans+= (sub/2);
+							sub = 0;
+						}
+					}
+					if(sub==0)break;
+				}
+				ans+= size1+(sub);
+			}
+			out.write(ans+"\n");
 		}
-		out.println(sum);
-		int m=9999999;
-		out.println(m);
+		out.flush();
 		out.close();
 	}
 }

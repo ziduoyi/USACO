@@ -3,8 +3,14 @@ public class aaaaaaatest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		aaaaaaatest ex=new aaaaaaatest();	
-		System.out.println(ex.maxResult(new int[] {-8751,2479,-8909,5915,-9938,8538,5751,7284,-7379,-4367,6505,3554,-5997,-6086,-1614,-5979,6749,-2391,-3374,7646,3647,6446,-9155,-9569,9417,-608,7598,-4284,-5408,-8498,5449,894,-9330,3331,-8687,6031,6997,-9019,-7583,-6270,-7836,-3382,-9933,-5603,-3330,-3060,4249,5854,6799,2032,-5227,-6835,-514,-9969,2914,3560,-4754,3935,6,-6873,-6121,1756,-1702,-4168,-3049,8798,-6519,-3734,7904,-2029,-9535,-497,-1884,0,-2868,7068,320,7657,-2448,-3848,-5441,271,-4446,-1840,3395,-5776,7654,4696,-2050,-1714,-9327,1140,7027,-8260,635,-995,-3854,1275,7125,-2973,-4000,-5763,3875,-9884,8083,6025,-5966,-3248,8097,6167,4531,9197,-8117,3401,-3411,-6569,-4305,945,709,1728,-8471,316,-2213,9566,9603,7678,8373,-9312,-9306,4408,9822,-2726,6743,-5390,-5726,-4101,3615,-9454,1727,-5379,-7579,-7083,-8708,3613,5521,-3671,-7573,4374,4497,636,-9884,-5314,-45,5832,7020,-899,-1671,3271,-1314,-7484,6319,-7311,-3887,6879,7228,-4873,763,-9875,9316,-2991,-6360,-2351,6273,-2294,434,-6143,363,5535,6641,2221,-9427,-2443,-9143,172,7606,3193,-1466,7586,4580,-3962,3193,5961,-7064,-3555,9468,833,-4803,-8904,-4420,7071,535,8434,946,-8901,2702,-1115,-8466,8226,9452,3723,-7267,7925,3607,-7495,8233,1339,5613,-3891,-2668,3444,-329,1989,-792,-8883,-3188,-23,5538,-5422,6014,-5527,-4000,-6444,-165,-1102,5296,-2594,-7302,5851,-594,4749,6262,7106,-670,-8386,7080,4692,5384,8080,8406,8244,-6144,4063,-7125,4303,-7760,8335,9739,3881,-2077,-9156,-9801,-2765,7807,-8890,7550,3027,-3889,-9448,2116,-8265,-9078,2413,-7092,-9806,7038,3219,3659,-1132,9562,4550,7413,-3573,-2096,-2366,7884,-7314,4269,3432,2279,-8153,-2801,-6849,5963,-3272,3901,-1204,-5353,2078,-9675,8712,-1259,-1291,-7596,2671,7828,-1451,-7926,8603,-4858,2600,7982,-5178,-3877,-1399,4303,9696,6289,6138,-6884,1533,6992,-6123,-5468,5735,5003,5114,7969,8887,4682,-9921,9199,9000,2609,4880,-237,9093,9268,8609,-4320,5009,-9188,-1013,1057,-864,1263,-8229,6653,3873,3652,6519,9403,-2003,-8130,-4121,-6671,7602,7237,3692,-3264,5818,-5892,-9488,-1774,-4083,-9104,6320,5728,5473,5616,7864,4349,7869,-2569,-6529,-8611,-5712,-8372,-1882,8429,7119,8314,-7453,-5330,-1949,5510,9069,6760,-3449,993,8079,8856,663,7556,-5227,-9243,-9425,1912,4663,2976,-4100,-1888,2055,-6330,-2035,8527,-2760,2816,5294,6866,560,-8042,2340,-8531,-8666,-8095,-4926,5016,-905,-387,4079,-1954,-941,9669,4548,2883,4976,7238,-8685,-2256,1906,6226,-2233,-925,-2392,-5148,-9405,-8689,-6705,9853,-1119,9765,3518,5757,-1933,7398,-724,-5328,4931,-3920,3458,628,8111,-4941,9529,-9965,-109,-6392,-4357}, 104));
+		aaaaaaatest ex=new aaaaaaatest();
+		//System.out.println(ex.minAbsoluteSumDiff(new int[] {1,10,4,4,2,7}, new int[] {9,3,5,1,7,4}));
+		//System.out.println(ex.shortestPalindrome( "abcd"));
+		//System.out.println(ex.minCut( "ab"));
+		//System.out.println(ex.canIWin( 10, 1));
+		//ex.getCoprimes(new int[] {2,3,3,2}, new int[][]{{0,1},{1,2},{1,3}});
+		//	System.out.println(ex.longestPalindrome("cacb", "cbba"));
+		//System.out.println(ex.maxResult(new int[] {-8751,2479,-8909,5915,-9938,8538,5751,7284,-7379,-4367,6505,3554,-5997,-6086,-1614,-5979,6749,-2391,-3374,7646,3647,6446,-9155,-9569,9417,-608,7598,-4284,-5408,-8498,5449,894,-9330,3331,-8687,6031,6997,-9019,-7583,-6270,-7836,-3382,-9933,-5603,-3330,-3060,4249,5854,6799,2032,-5227,-6835,-514,-9969,2914,3560,-4754,3935,6,-6873,-6121,1756,-1702,-4168,-3049,8798,-6519,-3734,7904,-2029,-9535,-497,-1884,0,-2868,7068,320,7657,-2448,-3848,-5441,271,-4446,-1840,3395,-5776,7654,4696,-2050,-1714,-9327,1140,7027,-8260,635,-995,-3854,1275,7125,-2973,-4000,-5763,3875,-9884,8083,6025,-5966,-3248,8097,6167,4531,9197,-8117,3401,-3411,-6569,-4305,945,709,1728,-8471,316,-2213,9566,9603,7678,8373,-9312,-9306,4408,9822,-2726,6743,-5390,-5726,-4101,3615,-9454,1727,-5379,-7579,-7083,-8708,3613,5521,-3671,-7573,4374,4497,636,-9884,-5314,-45,5832,7020,-899,-1671,3271,-1314,-7484,6319,-7311,-3887,6879,7228,-4873,763,-9875,9316,-2991,-6360,-2351,6273,-2294,434,-6143,363,5535,6641,2221,-9427,-2443,-9143,172,7606,3193,-1466,7586,4580,-3962,3193,5961,-7064,-3555,9468,833,-4803,-8904,-4420,7071,535,8434,946,-8901,2702,-1115,-8466,8226,9452,3723,-7267,7925,3607,-7495,8233,1339,5613,-3891,-2668,3444,-329,1989,-792,-8883,-3188,-23,5538,-5422,6014,-5527,-4000,-6444,-165,-1102,5296,-2594,-7302,5851,-594,4749,6262,7106,-670,-8386,7080,4692,5384,8080,8406,8244,-6144,4063,-7125,4303,-7760,8335,9739,3881,-2077,-9156,-9801,-2765,7807,-8890,7550,3027,-3889,-9448,2116,-8265,-9078,2413,-7092,-9806,7038,3219,3659,-1132,9562,4550,7413,-3573,-2096,-2366,7884,-7314,4269,3432,2279,-8153,-2801,-6849,5963,-3272,3901,-1204,-5353,2078,-9675,8712,-1259,-1291,-7596,2671,7828,-1451,-7926,8603,-4858,2600,7982,-5178,-3877,-1399,4303,9696,6289,6138,-6884,1533,6992,-6123,-5468,5735,5003,5114,7969,8887,4682,-9921,9199,9000,2609,4880,-237,9093,9268,8609,-4320,5009,-9188,-1013,1057,-864,1263,-8229,6653,3873,3652,6519,9403,-2003,-8130,-4121,-6671,7602,7237,3692,-3264,5818,-5892,-9488,-1774,-4083,-9104,6320,5728,5473,5616,7864,4349,7869,-2569,-6529,-8611,-5712,-8372,-1882,8429,7119,8314,-7453,-5330,-1949,5510,9069,6760,-3449,993,8079,8856,663,7556,-5227,-9243,-9425,1912,4663,2976,-4100,-1888,2055,-6330,-2035,8527,-2760,2816,5294,6866,560,-8042,2340,-8531,-8666,-8095,-4926,5016,-905,-387,4079,-1954,-941,9669,4548,2883,4976,7238,-8685,-2256,1906,6226,-2233,-925,-2392,-5148,-9405,-8689,-6705,9853,-1119,9765,3518,5757,-1933,7398,-724,-5328,4931,-3920,3458,628,8111,-4941,9529,-9965,-109,-6392,-4357}, 104));
 		//ex.distanceLimitedPathsExist(5, new int[][] {{0,1,10},{1,2,5},{2,3,9},{3,4,13}}, new int[][] {{0,4,14},{1,4,13}});
 		//System.out.println(ex.maxHeight(new int[][] {{50,45,20},{95,37,53},{45,23,12}}));
 		//ex.combinationSum(new int[] {2,3,6,7}, 7);
@@ -31,6 +37,262 @@ public class aaaaaaatest {
 		//System.out.println(Arrays.toString(ex. findRedundantConnection2(new int[][] {{1,4},{3,4},{1,3},{1,2},{4,5}})));
 		
 	}
+	/*
+	  public int countDifferentSubsequenceGCDs(int[] nums) {
+	       HashSet<Integer>[] set = new HashSet[100001];
+	       for(int i=0;i<100001; i++)
+	    	   set[i] = new HashSet<>();
+	       
+	   }
+	
+    public int minAbsoluteSumDiff(int[] nums1, int[] nums2) {
+        long curr = 0;
+        int n = nums1.length;
+        for(int i=0; i<n; i++)
+        	curr += Math.abs(nums1[i]-nums2[i]);
+        TreeSet<Integer> set = new TreeSet<>();
+        set.add(-1000000000);
+        set.add(1000000000);
+        for(int i=0; i<n; i++)
+        	set.add(nums1[i]);
+        long ans = curr;
+        for(int i=0; i<n; i++) {
+        	int old = Math.abs(nums1[i]-nums2[i]);
+        	int next = (int) Math.min(Math.abs(set.floor(nums2[i])-nums2[i]), Math.abs(set.ceiling(nums2[i])-nums2[i]));
+        	if(next<old)
+        		ans = Math.min(ans, curr-(old-next));
+        }
+        return (int) (ans%1000000007);
+    }
+    public int[][] matrixRankTransform(int[][] matrix) {
+        int N = matrix.length;
+        int M = matrix[0].length;
+        int[][] ans = new int[N][M];
+        LinkedList<int[]> list = new LinkedList<>();
+        for(int i=0; i<N; i++)
+        	for(int j=0; j<M; j++)
+        		list.add(new int[] {i,j});
+        Collections.sort(list, new Comparator<int[]>() {
+			@Override
+			public int compare(int[] o1, int[] o2) {
+				// TODO Auto-generated method stub
+				return matrix[o1[0]][o1[1]]-matrix[o2[0]][o2[1]];
+			}
+        });
+        int[][] row = new int[N][2];
+        int[][] col = new int[M][2];
+        while(!list.isEmpty()) {
+        	int val = matrix[list.peek()[0]][list.peek()[1]];
+        	while(val==matrix[list.peek()[0]][list.peek()[1]]) {
+        		int[] arr = list.removeFirst();
+        	}
+        }
+    }
+	
+    public String shortestPalindrome(String s) {
+        long hash1 = 0;
+        long hash2 = 0;
+        long mult = 1;
+        int pos = -1;
+        for(int i=0; i<s.length(); i++) {
+        	int val = s.charAt(i)-'a'+1;
+        	hash1+= (mult*val);
+        	hash2*=27;
+        	hash2+=val;
+        	hash1%=1000000007;
+        	hash2%=1000000007;
+        	if(hash1==hash2) {
+        		pos = i+1;
+        	}
+        	mult*=27;
+        	mult%=1000000007;
+        }
+        String str = s.substring(pos);
+        String n = "";
+        if(str.isBlank())return s;
+        for(int i=0; i<str.length(); i++) {
+        	n+=(str.charAt(str.length()-i-1));
+        	
+        }
+        return n + s;
+    }
+	
+    public int minCut(String s) {
+        int N = s.length();
+        boolean[][] isPal = new boolean[N][N];
+        for(int i=0; i<N; i++) {
+        	isPal[i][i] = true;
+        	for(int j=1; j<N; j++) {
+        		if(i-j<0||i+j>N-1)
+        			break;
+        		if(s.charAt(i-j)==s.charAt(i+j))
+        			isPal[i-j][i+j] = true;
+        		else
+        			break;
+        	}
+        }
+        for(int i=0; i<N-1; i++) {
+        	if(s.charAt(i)!=s.charAt(i+1))continue;
+        	isPal[i][i+1] = true;
+        	for(int j=1; j<N; j++) {
+        		if(i-j<0||i+j+1>N-1)
+        			break;
+        		if(s.charAt(i-j)==s.charAt(i+j+1))
+        			isPal[i-j][i+j+1] = true;
+        		else
+        			break;
+        	}
+        }
+        int[][] dp = new int[N][N];
+        int[] min = new int[N];
+        Arrays.fill(min, 1000000);
+        for(int i=0; i<N; i++)Arrays.fill(dp[i], 1000000);
+        dp[0][0]= 1;
+        min[0] = 1;
+        for(int i=1; i<N; i++) {
+        	dp[i][i] = min[i-1]+1;
+        	min[i] = dp[i][i];
+        	for(int j=i-1; j>=1; j--) {
+        		dp[i][j] = Math.min(min[j-1]+1, dp[i-1][j]);
+        		if(isPal[j][i])
+        			min[i] = Math.min(min[i], dp[i][j]);
+        	}
+        	dp[i][0] = 1;
+        	if(isPal[0][i])
+        		min[i] = 1;
+        }
+       return min[N-1]-1;
+    }
+	
+	static boolean[] dp;
+	static boolean[] visit;
+	static int[] times;
+	static int tar;
+	static int max;
+    public boolean canIWin(int maxChoosableInteger, int desiredTotal) {
+        tar = desiredTotal;
+        if(tar==0)return true;
+        max = maxChoosableInteger;
+        if(max*(max+1)/2<tar) return false;
+        times = new int[max+1];
+        times[0] = 1;
+        for(int i=1; i<=max; i++)
+        	times[i] = times[i-1]*2;
+        dp = new boolean[times[max]];
+        visit = new boolean[times[max]];
+        dp[0]= true;
+        visit[0] = true;
+        recursion(0);
+        return dp[0];
+    }
+    static void recursion(int node) {
+    	visit[node] = true;
+    	int sum = 0;
+    	int div = 1;
+    	for(int i=0; i<max; i++) {
+    		sum += (((node/div)%2)*(i+1));
+    		div*=2;
+    	}
+    	if(sum>=tar) {
+    		dp[node] = false;
+    		return;
+    	}
+    	for(int i=0; i<max; i++) {
+    		if((node^(times[i]))>node) {
+    			int next = node^(times[i]);
+    			if(!visit[next])
+    				recursion(next);
+    			if(!dp[next]) {
+    				dp[node] = true;
+    				return;
+    			}
+    		}
+    	}
+    	dp[node] = false;
+    	return;
+    }
+	
+	static Stack<Integer>[] stack;
+	static ArrayList<Integer>[] targets;
+	static ArrayList<Integer>[] move;
+	static int[] values;
+	static int[] ans;
+    public int[] getCoprimes(int[] nums, int[][] edges) {
+    	int N = nums.length;
+    	stack = new Stack[51];
+    	targets = new ArrayList[51];
+    	move = new ArrayList[N];
+    	for(int i=0; i<51; i++) {
+    		stack[i] = new Stack<>();
+    		targets[i] = new ArrayList<>();
+    	}
+    	for(int i=0; i<N; i++)move[i] = new ArrayList<>();
+    	for(int i=0; i<edges.length; i++) {
+    		move[edges[i][0]].add(edges[i][1]);
+    		move[edges[i][1]].add(edges[i][0]);
+    	}
+    	values = nums.clone();
+    	ans = new int[N];
+    	Arrays.fill(ans, -1);
+    	for(int i=50; i>0; i--) {
+    		for(int j=1; j<51; j++) {
+    			int a = i;
+    			int b = j;
+    			while(a!=0&&b!=0) {
+    				if(a<b)
+    					b-=(b/a)*a;
+    				else
+    					a-=(a/b)*b;
+    			}
+    			if(a==1||b==1)
+    				targets[i].add(j);
+    		}
+    	}
+    	recursion(0,-1);
+    	return ans;
+    }
+    static void recursion(int node, int last) {
+    	ArrayList<Integer> al = move[node];
+    	int s = al.size();
+    	for(int i=0; i<targets[values[node]].size(); i++) {
+    		int tar = targets[values[node]].get(i);
+    		stack[tar].add(node);
+    	}
+    	for(int i=0; i<s; i++) {
+    		int tar = al.get(i);
+    		if(tar==last)continue;
+    		if(!stack[values[tar]].isEmpty())
+    			ans[tar] = stack[values[tar]].peek();
+    		recursion(tar, node);
+    	}
+    	for(int i=0; i<targets[values[node]].size(); i++) {
+    		int tar = targets[values[node]].get(i);
+    		stack[tar].pop();
+    	}
+    }
+	
+    public int longestPalindrome(String word1, String word2) {
+        String str = word1 + word2;
+        int split = word1.length();
+        int N = str.length();
+        int[][] dp = new int[N][N];
+        for(int i=N-1; i>-1; i--) {
+        	dp[i][i] = 1;
+        	for(int j= i+1; j<N; j++) {
+        		if(str.charAt(i)==str.charAt(j)) dp[i][j] = dp[i+1][j-1]+2;
+        		else dp[i][j] = Math.max(dp[i+1][j], dp[i][j-1]);
+        	}
+        }
+        int ans = 0;
+        for(int i=0; i<word1.length(); i++) {
+        	for(int j=0; j<word2.length(); j++) {
+        		if(word1.charAt(i)!=word2.charAt(j))continue;
+        		ans = Math.max(ans, 2+dp[i+1][word1.length()+j-1]);
+        	}
+        }
+        return ans;
+    }
+	
     public int maxResult(int[] nums, int k) {
         int[] dp = new int[nums.length];
         Arrays.fill(dp, -1000000000);
@@ -61,7 +323,7 @@ public class aaaaaaatest {
         return dp[nums.length-1];
                      
     }
-	/*
+	
     public boolean[] distanceLimitedPathsExist(int n, int[][] edgeList, int[][] queries) {
         Arrays.sort(edgeList, new Comparator<int[]>() {
 			@Override

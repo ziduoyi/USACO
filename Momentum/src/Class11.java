@@ -4,42 +4,15 @@ public class Class11 {
 	
 	public static void main(String[] args)throws IOException {
 		// TODO Auto-generated method stub
-	    StarsAndStripes var = new StarsAndStripes();
-	    var.printASmallBox();
-	    var.printTwoBlankLines();
-	    var.printABigBox();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+		int n = Integer.parseInt(br.readLine());
+		if(n%4==0)
+			out.write("YES\n");
+		else
+			out.write("NO\n");
+		out.flush();
+		out.close();
 	}
 }
-class StarsAndStripes{
-	   public StarsAndStripes(){
-	      System.out.println("StarsAndStripes");
-	      printTwoBlankLines();
-	   }
 
-	   public void printTwentyStars(){
-	     System.out.println("********************");
-	   }
-
-	   public void printTwentyDashes(){
-	     System.out.println("--------------------");
-	   }
-
-	   public void printTwoBlankLines(){
-	     System.out.println("\n");
-	   }
-	   
-	   public void printASmallBox(){	
-	     printTwentyDashes();
-	     printTwentyStars();
-	     printTwentyDashes();
-	     printTwentyStars();
-	     printTwentyDashes();
-	     printTwentyStars();
-	     printTwentyDashes();
-	   }
-	 
-	   public void printABigBox(){
-	     printASmallBox();
-	     printASmallBox();
-	   }
-	}

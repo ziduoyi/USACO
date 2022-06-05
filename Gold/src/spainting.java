@@ -18,7 +18,7 @@ public class spainting {
 			if(i>=K-1)
 				dp[i] = (sum*(M-1))%mod;
 			else
-				dp[i] = (sum*(M))%mod;
+				dp[i] = (dp[i-1]*(M))%mod;
 			if(i>=K-1) 
 				sum -= dp[i-K+1];
 			sum+=dp[i];

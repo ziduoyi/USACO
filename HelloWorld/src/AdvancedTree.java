@@ -1,3 +1,4 @@
+
 import java.util.Arrays;
 
 public class AdvancedTree {
@@ -240,3 +241,47 @@ public class AdvancedTree {
 // ------------ End BIT ---------    
 // ----------------------------------------------------------
 }
+/* MO's algorithm
+int inter = (int)Math.ceil(Math.sqrt(n));
+int[] freq = new int[map.size()];
+Arrays.sort(queries, new Comparator<int[]>() {
+	@Override
+	public int compare(int[] o1, int[] o2) {
+		// TODO Auto-generated method stub
+		if(o1[0]/inter != o2[0]/inter) return o1[0]/inter - o2[0]/inter;
+		return o1[1]-o2[1];
+	}	    		
+});
+long[] ans = new long[q];
+int stop = inter-1;
+int curr = 0;
+int pos = 0;
+for(int j=1; j<=(int)Math.ceil((double)n/inter); j++) {
+	if(pos<q&&queries[pos][0]<j*inter) {
+		int left = queries[pos][0];
+		int right = queries[pos][0]-1;
+		Arrays.fill(freq, 0);
+		while(pos<q&&queries[pos][0]<j*inter) {
+			for(int k=right+1; k<=queries[pos][1]; k++) {
+				freq[map.get(arr[k])]++;
+			}
+			right = queries[pos][1];
+			if(queries[pos][0]>=left)
+				for(int k=left; k<queries[pos][0]; k++) {
+					freq[map.get(arr[k])]--;
+				}
+			else
+				for(int k=queries[pos][0]; k<left; k++) {
+					freq[map.get(arr[k])]++;
+				}
+			left = queries[pos][0];
+			if(map.containsKey(queries[pos][2]))
+				ans[queries[pos][3]] = freq[map.get(queries[pos][2])];
+			pos++;
+		}
+	}
+	
+}
+for(int j=0; j<q; j++)
+	out.write(ans[j]+"\n");
+	*/

@@ -32,7 +32,7 @@ public class telephone {
 	    	Arrays.fill(dp[i], 1000000000);
 	    dp[0][type[0]] = 0;
 	    LinkedList<int[]> list = new LinkedList<>();
-	    list.add(new int[] {0,0});
+	    list.add(new int[] {0,type[0]});
 	    while(!list.isEmpty()) {
 	    	int[] node = list.removeFirst();
 	    	if(node[0]+1<N&&dp[node[0]][node[1]]+1<dp[node[0]+1][node[1]]) {

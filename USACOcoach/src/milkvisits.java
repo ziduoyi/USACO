@@ -115,7 +115,7 @@ public class milkvisits {
 			que[i][1] = b;
 			que[i][2] = c;
 			qlist[a].add(i);
-			//qlist[b].add(i);
+			qlist[b].add(i);
 		}
 		
 		for(int i=1;i<N;i++) {

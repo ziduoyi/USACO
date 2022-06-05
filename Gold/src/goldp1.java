@@ -4,78 +4,54 @@ public class goldp1 {
 
 	public static void main(String[] args)throws IOException {
 		// TODO Auto-generated method stub
-		BufferedReader br= new BufferedReader(new FileReader("timeline.in"));
-		PrintWriter out=new PrintWriter(new BufferedWriter(new FileWriter("timeline.out")));
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		int N = Integer.parseInt(st.nextToken());
-		int M = Integer.parseInt(st.nextToken());
-		int C = Integer.parseInt(st.nextToken());
-		int[] mins = new int[N];
-		st = new StringTokenizer(br.readLine());
-		for(int i=0; i<N; i++) 
-			mins [i] = Integer.parseInt(st.nextToken());
-		ArrayList<Integer>[] starts = new ArrayList[N];
-		ArrayList<Integer>[] ends = new ArrayList[N];
-		for(int i=0; i<N; i++) {
-			starts[i] = new ArrayList<>();
-			ends[i] = new ArrayList<>();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str = br.readLine();
+		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+		HashMap<Character, Integer> map = new HashMap<>();
+		int a = 0;
+		Set<Character> set = new HashSet<>();
+		for(int i=0; i<str.length(); i++) {
+			set.add(str.charAt(i));
+			if(!map.containsKey(str.charAt(i))) 
+				map.put(str.charAt(i), a++);
 		}
-		for(int i=0; i<C; i++) {
-			st = new StringTokenizer(br.readLine());
-			int a =Integer.parseInt(st.nextToken())-1;
-			int b =Integer.parseInt(st.nextToken())-1;
-			int c =Integer.parseInt(st.nextToken());
-			starts[a] .add(b);
-			starts[a].add(c);
-			ends[b].add(a);
-			ends[b].add(c);
-		}
-		int[] dist = new int[N];
-		for(int i=0; i<N; i++)
-			dist[i] = mins[i];
+		int N = set.size();
+		int[][] counts = new int[N][N];
+		for(int i=0; i<str.length()-1; i++)
+			counts[map.get(str.charAt(i))][map.get(str.charAt(i+1))]++;
+		int[] dp = new int[(1<<N)];
+		Arrays.fill(dp, 1000000000);
+		dp[0] = 0;
 		LinkedList<Integer> list = new LinkedList<>();
-		int count =0;
-		boolean[] visit = new boolean[N];
-		for(int j=0; j<N; j++) {
-			if(count==N)
-				break;
-			if(visit[j] ==true)
-				continue;
-			list.add(j);
-			visit[j] =true;
-			count++;
-			while(!list.isEmpty()) {
-				int num = list.removeFirst();
-				if(visit[num]==false) {
-					count ++;
-					visit[num] = true;
-				}
-				ArrayList<Integer> start = starts[num];
-				ArrayList<Integer> end = ends[num];
-				int s1 = start.size();
-				int s2 = end.size();
-				for(int i=0; i<s1; i+=2) {
-					int tar = start.get(i);
-					int cost = start.get(i+1);
-					if(dist[num] + cost>dist[tar]) {
-						dist[tar] =dist[num] + cost;
-						list.add(tar);
+		boolean[] visit = new boolean[(1<<N)];
+		visit[0] = true;
+		for(int i=0; i<N; i++) {
+			dp[(1<<i)] = counts[i][i];
+			list.add((1<<i));
+			visit[(1<<i)] = true;
+		}
+		while(!list.isEmpty()) {
+			int node = list.removeFirst();
+			for(int i=0; i<N; i++) {
+				if((node^(1<<i))>node) {
+					int add = 0;
+					int next = (node^(1<<i));
+					for(int j=0; j<N; j++) {
+						if((next^(1<<j))<next) 
+							add+= counts[i][j];
+					}
+					if(dp[next]>dp[node]+add) {
+						dp[next] = dp[node]+add;
+						if(!visit[next]) {
+							list.add(next);
+							visit[next] = true;
+						}
 					}
 				}
-				
-				for(int i=0; i<s2; i+=2) {
-					int tar = end.get(i);
-					int cost = end.get(i+1);
-					if(dist[tar] + cost>dist[num]) {
-						dist[num] = dist[tar] + cost;
-						list.add(num);
-					}
-				}
-				
 			}
 		}
-		for(int i=0; i<N; i++)
-			out.println(dist[i]);
+		out.write(dp[(1<<N)-1]+1+"\n");
+		out.flush();
 		out.close();
 	}
 

@@ -1,29 +1,24 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-class Dog
+public class Class22
 {
-    public void barkOnce()
-    {
-        System.out.print("woof");
-    }
+  public static void main( String[] args ) throws FileNotFoundException
+  {
+    //add in all of the provided test cases from the lab handout
+	  int[] array = new int[] {100000,4,6,5,7};
+	   int z=0;
+	   for(int value : array )
+	   {
+		   if( value % 2 != 0)
+			   z++;
+	   }
+	   System.out.println(z);
+  
+  }
+} 
 
-    public void barkTwice()
-    {
-        barkOnce();
-        barkOnce();
-    }
-}
-public class Class22 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//code in the main of another class
-		Dog d = new Dog();
-		String str = "AnneChristiono";
-		int pos = str.indexOf("eC");
-		System.out.println(1!=1);
-	}
-		
-}
 
 
